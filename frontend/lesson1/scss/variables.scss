@@ -1,0 +1,9 @@
+$blue: rgb(0, 0, 123);
+$border: 1px solid $blue;
+
+$dark-theme: true;
+
+@if $dark-theme {
+    $blue: rgb(96, 96, 166);
+    $border: 1px solid $blue;
+}

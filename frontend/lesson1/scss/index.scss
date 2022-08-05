@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-size:14px;
+}
+
+a{
+    color:red;
+}
+
+
+h1{
+    font-size:3em;
+}
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import './variables';
+@import './components/header';
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// );
+
+.container{
+    margin:200px;
+
+    h1{
+        font-size:20px;
+        color:green;
+        font-weight: bold;
+    }
+    
+
+    .content{
+        color:red;
+        border:1px solid $blue;
+
+
+        &__bottom {
+            border-bottom:1px solid $blue;
+        }
+
+        &::after{
+            content:"Hello World";
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        margin:100px;
+    }
+
+    @include media-breakpoint-up(sm){
+        margin:400px;
+    }
+
+
+}
+
