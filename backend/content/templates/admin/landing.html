@@ -1,9 +1,15 @@
-{% extends "admin/base_admin.html" %}
+{% extends "admin/base_site.html" %}
 
 {% block content %}
 
 <div class="">
-    <input type="text" name="name" value="{{ name }}">
+    <form method="post">
+
+        {% csrf_token %}
+        <input type="text" name="name" value="{{ name }}">
+
+        <input type="submit" value="Save" name="_save" />
+    </form>
 </div>
 
 
