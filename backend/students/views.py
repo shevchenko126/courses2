@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+class SubjectsView:
+    def get(self, request):
+        return render(request, 'subjects.html')
+
+    def post(self, request):
+        return render(request, 'subjects.html')

@@ -1,37 +1,11 @@
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
+import productsReducer from './products'
+import userReducer from './user'
 
-const initialState = {
-    count:10,
-    userData:{
-        name:'John',
-    }
-}
-const reducer = (state=initialState, action) => {
-    switch(action.type) {
-        case 'INCREMENT':
-            return {
-                count:state.count + 1,
-                ...state,
-            }
-        case 'DECREMENT':
-            return {
-                count:state.count - 1,
-                ...state,
-            }
-        case 'SET_NAME':
-            return {
-                userData:{
-                    name:action.name,
-                },
-                ...state,
-            }
-        default:
-            return state
-    }
-}
-
-
-const store = createStore(reducer, initialState);
+const store = createStore(combineReducers({
+    products: productsReducer,
+    user: userReducer,
+}));
 
 
 export default store;

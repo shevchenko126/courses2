@@ -14,4 +14,5 @@ class MyView(View):
 class MyViewOne(View):
 
     def get(self, request):
+        gr = 'sss'
         return render(request, 'content/index1.html', {})
