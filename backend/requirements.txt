@@ -1,0 +1,5 @@
+django
+djangorestframework
+django-parler
+django-parler-rest
+gunicorn
