@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -26,7 +27,8 @@ const Home:NextPage = () => {
               street:"Shevchenko",
               house:1
             },
-        ]
+        ],
+        lessons:["lesson1", "lesson2", "lesson3"]
     }
 
 
@@ -39,3 +41,12 @@ const Home:NextPage = () => {
 }
 
 export default Home
+
+
+export const getServerSideProps: GetServerSideProps = async  ({ query, req }) => {
+    return {
+      props: {
+          title:"Hello World!11111"
+      }
+  }
+}
