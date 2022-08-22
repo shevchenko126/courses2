@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h3.description-header {
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #191F33;
+}
+
+p.description-content {
+    white-space: pre-line;
+    color: #767E94;
+}
+
+ul.description-content {
+    list-style-image: url(../../../../public/icons/Check.svg);
+    list-style-position: outside;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    color: #464D61;
+}
+
+ul.description-content > li {
+    padding: 8px 16px;
+    break-inside: avoid-column;
+}

@@ -1,0 +1,122 @@
+.contact{
+  height: 506px;
+  background: #FFFFFF;
+  box-shadow: 0 12px 120px rgba(0, 26, 102, 0.08);
+  border-radius: 20px;
+  margin-top: 100px;
+  padding: 0 80px;
+}
+.left{
+  border-right: 1px solid #EBEEF7;
+  height: 506px;
+}
+.contact__contactInfo{
+  margin-top: 50px;
+}
+.contact__contactInfo h2{
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 40px;
+  color: #191F33;
+  margin-bottom: 32px;
+}
+.contact-contactInfo__infoBlock{
+  margin-right: 100px;
+}
+.contact-contactInfo__phone,
+.contact-contactInfo__email,
+.contact-contactInfo__address{
+  display: flex;
+  align-items: flex-start;
+}
+.contact-contactInfo-phone__number,
+.contact-contactInfo-email__mail,
+.contact-contactInfo-address__address{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #464D61;
+  margin: 0 0 20px 10px;
+}
+
+
+.contact__sendMessage{
+  padding: 50px 80px;
+}
+.contact-sendMessage__title{
+  margin-bottom: 32px;
+}
+.contact-sendMessage__title h2{
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 40px;
+  color: #191F33;
+}
+.contact__sendMessage__form{
+
+}
+.contact__sendMessage-form__name,
+.contact__sendMessage-form__mail,
+.contact__sendMessage-form__subjects{
+  margin-bottom: 18px;
+}
+.contact__sendMessage-form__message{
+  margin-bottom: 32px;
+}
+input, textarea {
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #939AAD;
+  background: #FFFFFF;
+  border: 1px solid #EDEFF5;
+  border-radius: 5px;
+  width: 100%;
+  padding: 12px 18px;
+}
+textarea{
+  height: 120px;
+  resize: none;
+}
+
+@media (max-width: 1199px) {
+  .contact__sendMessage-form__name,
+  .contact__sendMessage-form__mail,
+  .contact__sendMessage-form__subjects,
+  .contact__sendMessage-form__message{
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .left{
+    border-right:0;
+    height: 100%;
+    padding: 0 ;
+    border-bottom: 1px solid #EBEEF7;
+  }
+.contact {
+  height: 800px;
+}
+  .contact__sendMessage{
+    padding: 20px 0 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact {
+    height: 900px;
+  }
+}
+@media (max-width: 320px) {
+  .contact {
+    height: 1000px;
+  }
+}

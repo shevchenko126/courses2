@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { MouseEvent } from 'react';
 import type { ProfileType } from '../../types/Profile.types';
-
+import { setCookie, getCookie } from '../../api/cookies'
 
 interface ProfileProps {
     profile: ProfileType
@@ -37,7 +37,7 @@ const Lesson = ({title, handleClick}:{title:string, handleClick:(lesson:string) 
 
 const Lessons = ({lessons, handleClick}:{lessons:ProfileType['lessons'] | null, handleClick:(lesson:string) => void}) => {
 
-    
+
     return (
         <div>
             {lessons?.map((lesson, index) => (
@@ -53,10 +53,10 @@ const Lessons = ({lessons, handleClick}:{lessons:ProfileType['lessons'] | null, 
 
 const SelectedLessons = ({lessons}:{lessons:ProfileType['lessons'] | null}) => {
     return (
-        
+
         <div>
             <h2>Выбранные уроки</h2>
-        
+
             {lessons?.map((lesson, index) => (
                 <div key={index}>{lesson}</div>
             ))}
@@ -77,12 +77,34 @@ const Profile = ({profile}:ProfileProps):JSX.Element => {
     const [title, setTitle] = useState<TitleProps[] | null>(null);
     const {name, age, address, lessons} = profile;
 
+    const [titleStr, setTitleStr] = useState('')
 
     const handleClick = (lesson:string) => {
 
         selectedLessons ? setSelectedLessons([...selectedLessons, lesson]) : setSelectedLessons([lesson]) ;
     }
-    
+
+    const changeTitle = () => {
+        setCookie('tt', 'asfasfafsa')
+
+        const title = 'frfrfrfr?'
+
+        setTitle([{
+            title,
+            subtitle:'susdffsdfdsbtitle'
+        }])
+        window.localStorage.setItem('title', JSON.stringify({title})) //'{"title":"frfrfrfr"}'
+    }
+
+    useEffect(() => {
+
+        console.log( getCookie('tt') )
+        setTimeout(() => {
+            setTitleStr(JSON.parse(localStorage.getItem('title'))['title'])
+        }, 2000);
+
+    }, [])
+
     return (
         <div>
             <h1>Profile</h1>
@@ -95,21 +117,17 @@ const Profile = ({profile}:ProfileProps):JSX.Element => {
             <p>{ title && title[0].title }</p>
             <p>{ title && title[0].subtitle }</p>
 
-            <button onClick={() => {
-                setTitle([{
-                    title:'frfrfrfr',
-                    subtitle:'susdffsdfdsbtitle'
-                }])
-            }}>Change title</button>
+            <button onClick={changeTitle}>Change title</button>
+
+            <h2>{ titleStr }</h2>
 
 
             <Lessons lessons={lessons} handleClick={handleClick} />
 
             <SelectedLessons lessons={selectedLessons} />
-        
+
         </div>
     );
 }
 
 export default Profile;
-

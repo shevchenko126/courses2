@@ -1,0 +1,108 @@
+body {
+  background-color: #f5f7fa;
+}
+.top-category{
+  text-align: center;
+  margin-top: 100px;
+}
+.top-category__title {
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 48px;
+  margin-bottom: 50px;
+}
+.top-category__cards{
+  margin-bottom: 100px;
+}
+.top-category__card {
+  padding: 24px;
+  background-color: #ffff;
+  border-radius: 8px;
+
+}
+.top-category__card:hover .top-category-card-info-blockTitle__img {
+  background-color: #00aaff;
+  transition: all 0.2s;
+}
+.top-category__card:hover .top-category-card-info-blockTitle__img svg path {
+  stroke: white;
+  transition: all 0.2s;
+}
+.top-category-card__info {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgba(232, 247, 255, 0.6);
+}
+.top-category-card-info__blockTitle {
+  margin: 24px;
+}
+.top-category-card-info-blockTitle__title {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 32px;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+.top-category-card-info-blockTitle__items {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #767E94;
+
+}
+.top-category-card-info-blockTitle__img {
+  display: flex;
+  background-color: #ffff;
+  margin: 24px;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.top-category-card__links {
+  justify-content: center;
+}
+.top-category-card-links__category {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.top-category-card-links__category:last-child {
+  margin-bottom: 24px;
+}
+.top-category-card-links__category:hover .top-category-card-links-category__link {
+  font-weight: 600;
+  color: #00aaff;
+  transition: all 0.2s;
+}
+.top-category-card-links__category:hover .top-category-card-links-category-link__img svg path {
+  stroke:#00AAFF;
+  transition: all 0.2s;
+}
+.top-category-card-links-category-link__img svg{
+  display: block;
+}
+.top-category-card-links-category__link {
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  text-decoration: none;
+  color: #636a80;
+  content: none;
+  margin-left: 0.5rem;
+}
+

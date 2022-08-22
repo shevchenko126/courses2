@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.get-app {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  font-family: "Nunito", sans-serif;
+  min-height: 466px;
+  min-width: 375px;
+}
+.get-app a {
+  text-decoration: none;
+}
+
+.get-app__column_image {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 0 0px;
+  overflow: hidden;
+}
+.get-app__image {
+  position: absolute;
+  left: 12%;
+  bottom: 0%;
+}
+.get-app__image-shadow {
+  position: absolute;
+  right: 12%;
+  bottom: 0%;
+  filter: drop-shadow(-10px 20px 15px rgba(0, 0, 0, 0.3));
+}
+
+.get-app__column_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 20px;
+  min-width: 344px;
+}
+.get-app__title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.3px;
+  color: #191f33;
+  margin-top: 80px;
+}
+.get-app__text {
+  font-size: 20px;
+  line-height: 32px;
+  color: #767e94;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+/* --- button block --- */
+.button-area {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 344px;
+  height: 70px;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 164px;
+  height: 70px;
+  border-radius: 8px;
+  padding-left: 60px;
+  padding-top: 14px;
+  background: #ffffff;
+  border: 1px solid #ebeef7;
+  color: #191f33;
+  transition: all 0.2s ease;
+}
+.button__caption {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #767e94;
+}
+.button__app-market {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* --- button-icons --- */
+.google {
+  background-image: url(./images/google-play_gray.svg);
+  background-position: 17px center;
+  background-repeat: no-repeat;
+}
+
+.apple {
+  background-image: url(./images/apple-gray.svg);
+  background-position: 17px center;
+  background-repeat: no-repeat;
+}
+
+/* --- hover --- */
+.button:hover {
+  box-shadow: 0px 10px 25px rgba(0, 44, 109, 0.1);
+}
+.google:hover {
+  background-position: 17px center;
+  background-repeat: no-repeat;
+  background-image: url(./images/google-play_blue.svg);
+}
+.apple:hover {
+  background-position: 17px center;
+  background-repeat: no-repeat;
+  background-image: url(./images/apple-blue.svg);
+}
+
+/* Устройства Large (настольные компьютеры, менее 1200 пикселей) */
+@media (max-width: 1199.98px) {
+  .get-app {
+    margin-top: 50px;
+  }
+  .get-app__title {
+    margin-top: 40px;
+  }
+  .get-app__image {
+    left: 8%;
+  }
+  .get-app__image-shadow {
+    right: 8%;
+  }
+}
+/* Устройства Medium (планшеты, менее 992 пикселей) */
+@media (max-width: 991.98px) {
+  .get-app {
+    margin-top: 20px;
+    min-height: 350px;
+  }
+  .get-app__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  .get-app__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .button-area {
+    gap: 12px;
+  }
+  .get-app__image {
+    left: 5%;
+  }
+  .get-app__image-shadow {
+    max-height: 95%;
+    right: 5%;
+  }
+}
+/* Устройства Small (телефоны с горизонтальной ориентацией, менее 768 пикселей) */
+@media (max-width: 767.98px) {
+  .get-app {
+    margin-top: 0px;
+  }
+  .get-app__column_image {
+    order: 2;
+    min-height: 400px;
+  }
+  .get-app__column_text {
+    order: 1;
+    width: auto;
+  }
+  .get-app__image {
+    left: 8%;
+  }
+  .get-app__image-shadow {
+    right: 8%;
+  }
+}

@@ -1,0 +1,13 @@
+.buttonLightBlue{
+  background-color: #E8F7FF;
+  color: #00AAFF;
+  border-radius: 4px;
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 50px;
+  border: 0;
+  padding: 0 20px ;
+}
+

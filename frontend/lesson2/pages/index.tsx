@@ -13,7 +13,7 @@ const Home:NextPage = () => {
     let a:number = 5;
     let b:string = '6';
     let c:boolean = true;
-  
+
 
     let d = a + b;
 
@@ -43,10 +43,15 @@ const Home:NextPage = () => {
 export default Home
 
 
-export const getServerSideProps: GetServerSideProps = async  ({ query, req }) => {
+export const getServerSideProps: GetServerSideProps = async  ({req}) => {
+
+    console.log(req.cookies.tt)
     return {
       props: {
           title:"Hello World!11111"
       }
   }
 }
+
+//token=123;authToken=456;
+// getCookie('token') = 123

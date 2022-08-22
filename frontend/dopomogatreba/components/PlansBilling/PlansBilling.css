@@ -1,0 +1,284 @@
+.plans-billing__wrapper{
+  width: 1000px;
+}
+span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+}
+.plans-billing__currentPlans,
+.plans-billing__currentPlansBenefits,
+.plans-billing__nextInvoices,
+.plans-billing__paymentMethod,
+.plans-billing__recentInvoice{
+  height: 172px;
+  padding: 24px;
+  background: #ffff;
+  border: 1px solid #EBEEF7;
+  box-shadow: 0 12px 48px rgba(0, 34, 51, 0.06);
+  border-radius: 12px;
+}
+/*CurrentPlans*/
+.plans-billing__currentPlans{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.plans-billing-currentPlans__infoBlock{
+
+}
+.plans-billing-currentPlans-infoBlock__title {
+
+}
+.plans-billing-currentPlans-infoBlock__subscriptionName{
+  margin: 16px 0 12px;
+}
+.plans-billing-currentPlans-infoBlock__subscriptionName h2{
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 48px;
+}
+.plans-billing-currentPlans-infoBlock__subscriptionDate span{
+  font-weight: 400;
+  color: #767E94;
+}
+.plans-billing-currentPlans__buttonsBlock{
+  display: flex;
+  margin-bottom: 20px;
+}
+.plans-billing-currentPlans-buttonsBlock_cancelButton{
+  margin-right: 20px;
+}
+.plans-billing-currentPlans-buttonsBlock_cancelButton button{
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 50px;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color:  #636A80;
+  background: #ffff;
+  border-radius: 4px;
+  padding: 0 20px;
+  border: 1px solid #CCEEFF;
+}
+.plans-billing-currentPlans-buttonsBlock_upgradeButton{
+
+}
+
+/**/
+/*CurrentPlansBenefits*/
+.plans-billing__currentPlansBenefits{
+  height: 180px;
+}
+.plans-billing-currentPlansBenefits__title{
+
+}
+.plans-billing-currentPlansBenefits__title span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+}
+.plans-billing-currentPlansBenefits__plansItems{
+}
+input[type="checkbox"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.plans-billing-currentPlansBenefits-plansItems__item{
+  display: flex;
+  cursor: pointer;
+  margin-top: 16px;
+}
+.plans-billing-currentPlansBenefits-plansItems-item__title {
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #636A80;
+  margin-left: 8px;
+}
+/**/
+
+/*NextInvoices*/
+.plans-billing__nextInvoices{
+  height: 180px;
+}
+.plans-billing-nextInvoices__topBlock{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.plans-billing-nextInvoices-topBlock__titlePrice{
+
+}
+.plans-billing-nextInvoices-topBlock-titlePrice__title{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #191F33;
+}
+.plans-billing-nextInvoices-topBlock-titlePrice__price{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 36px;
+  color: #191F33;
+  margin: 0;
+}
+.plans-billing-nextInvoices-infoBlock__planType, .plans-billing-nextInvoices-infoBlock__nextInvoice{
+  display: flex;
+}
+.plans-billing-nextInvoices-infoBlock-planType__title, .plans-billing-nextInvoices-infoBlock-nextInvoice__title{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #464D61;
+}
+.plans-billing-nextInvoices-infoBlock-planType__info, .plans-billing-nextInvoices-infoBlock-nextInvoice__info{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #939AAD;
+}
+/**/
+
+/*PaymentMethod*/
+.plans-billing__paymentMethod{
+  height: 292px;
+}
+.plans-billing-paymentMethod__title{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #191F33;
+  margin-bottom: 30px;
+}
+.plans-billing-paymentMethod__cardBlock{
+
+}
+.plans-billing-paymentMethod-cardBlock__card{
+  display: flex;
+  margin-bottom: 25px;
+}
+.plans-billing-paymentMethod-cardBlock-card__type{
+  margin-right: 25px;
+}
+.plans-billing-paymentMethod-cardBlock-card__number{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 36px;
+  color: #191F33;
+}
+.plans-billing-paymentMethod__infoBlock{
+}
+.plans-billing-paymentMethod-infoBlock__nameCard{
+  margin-bottom: 12px;
+}
+.plans-billing-paymentMethod-infoBlock__dateCard{
+  margin-bottom: 26px;
+}
+.plans-billing-paymentMethod-infoBlock-nameCard__title, .plans-billing-paymentMethod-infoBlock-dateCard__title{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #464D61;
+}
+.plans-billing-paymentMethod-infoBlock-nameCard__name, .plans-billing-paymentMethod-infoBlock-dateCard__date{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #939AAD;
+}
+.plans-billing__paymentMethod__buttonsBlock{
+  display: flex;
+}
+.plans-billing__paymentMethod-buttonsBlock__changeCard{
+  margin-right: 40px;
+}
+.plans-billing__paymentMethod-buttonsBlock__changeCard button{
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 50px;
+  color: #00AAFF;
+  background: #ffff;
+  border-radius: 4px;
+  padding: 0 20px;
+  border: 1px solid #CCEEFF;
+}
+.plans-billing__paymentMethod-buttonsBlock__delete{
+  border: 0;
+  background: #ffff;
+}
+/**/
+
+/*RecentInvoice*/
+.plans-billing__recentInvoice{
+  height: 292px;
+}
+.plans-billing-recentInvoice__title{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #191F33;
+  margin-bottom: 16px;
+}
+.plans-billing-recentInvoice__infoBlock{
+
+}
+.plans-billing-recentInvoice-infoBlock__header{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #939AAD;
+  border-bottom: 1px solid rgba(147, 154, 173, 0.3);
+  margin-bottom: 25px;
+
+}
+.plans-billing-recentInvoice-infoBlock__data{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #464D61;
+  margin-bottom: 25px;
+}
+

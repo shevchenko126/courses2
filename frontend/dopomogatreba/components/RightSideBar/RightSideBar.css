@@ -1,0 +1,231 @@
+.sideBarContact{
+  width: 424px;
+  background: #FFFFFF;
+  border: 1px solid #EBEEF7;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+.sideBarContact__priceBlock{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EBEEF7;
+}
+.sideBarContact-priceBlock__price{
+  margin: 36px 0 36px 32px;
+}
+.sideBarContact-priceBlock__price span{
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 40px;
+  color: #191F33;
+}
+.sideBarContact-priceBlock__like{
+  margin: 25px 25px 25px 0;
+  cursor: pointer;
+}
+.sideBarContact__phoneBlock{
+  border-bottom: 1px solid #EBEEF7;
+}
+.sideBarContact-phoneBlock__phoneNumber{
+  display: flex;
+  flex-direction: column;
+  margin: 33px 33px 16px;
+  background: #F5F7FA;
+  border-radius: 8px;
+}
+.sideBarContact-phoneBlock__phoneNumber span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #636A80;
+  margin: 0 20px 20px;
+}
+.sideBarContact-phoneBlock-phoneNumber__number{
+  margin: 20px 46px 12px 25px;
+}
+.sideBarContact-phoneBlock-phoneNumber__number span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 32px;
+  color: #191F33;
+  margin-left: 16px;
+}
+.sideBarContact-phoneBlock__button{
+  margin: 0 32px 32px;
+}
+.sideBarContact-phoneBlock__button button{
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 50px;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color:  #ffff;
+  background: #00AAFF;
+  border-radius: 4px;
+  padding: 0 20px;
+  border: 1px solid #00AAFF;
+  width: 100%;
+}
+
+.sideBarContact__sellerBlock{
+  border-bottom: 1px solid #EBEEF7;
+}
+.sideBarContact-sellerBlock__seller{
+  display: flex;
+  margin: 32px 0 24px 32px;
+}
+.sideBarContact-sellerBlock-seller__avatar{
+  margin-right: 16px;
+}
+.sideBarContact-sellerBlock-seller__info{
+
+}
+.sideBarContact-sellerBlock-seller-info__addBy span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #767E94;
+}
+.sideBarContact-sellerBlock-seller-info__name span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #191F33;
+}
+.sideBarContact-sellerBlock__infoBlock{
+  margin:0 0 32px 32px;
+}
+.sideBarContact-sellerBlock__infoBlock img{
+  margin-right: 12px;
+}
+.sideBarContact-sellerBlock__infoBlock span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #636A80;
+}
+.sideBarContact-sellerBlock-infoBlock__address{
+  margin: 16px 0;
+}
+.sideBarContact__locationBlock{
+  padding: 32px;
+}
+.sideBarContact-locationBlock__title{
+  margin-bottom: 18px;
+}
+.sideBarContact-locationBlock__title span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 32px;
+  color: #191F33;
+}
+.sideBarContact-locationBlock__map{
+  position: relative;
+}
+.sideBarContact-locationBlock-map__img{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  background-position: 50% 50%;
+}
+.sideBarOverview{
+  width: 424px;
+  background: #FFFFFF;
+  border: 1px solid #EBEEF7;
+  border-radius: 16px;
+}
+.sideBarOverview__title{
+  margin: 32px 32px 24px;
+}
+.sideBarOverview__title span{
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 32px;
+  color: #191F33;
+}
+.sideBarOverview__bottomLine{
+  border-bottom: 1px solid #EBEEF7;
+}
+.sideBarOverview__infoBlock{
+  margin: 0 32px;
+}
+.sideBarOverview-infoBlock__info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.sideBarOverview-infoBlock__info:last-child{
+  margin-bottom: 24px;
+}
+.sideBarOverview-infoBlock-info__name span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #191F33;
+}
+.sideBarOverview-infoBlock-info__info span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #636A80;
+}
+.sideBarOverview__warning__bottomLine{
+  border-bottom: 1px solid #EBEEF7;
+}
+.sideBarOverview__warning{
+  display: flex;
+  margin: 24px 32px;
+
+}
+.sideBarOverview-warning__icon{
+  margin-right: 12px;
+}
+.sideBarOverview__shareAds{
+  margin: 24px 32px 32px 32px;
+}
+.sideBarOverview-shareAds__title{
+  display: flex;
+  margin-bottom: 18px;
+}
+.sideBarOverview-shareAds-title__icon{
+  margin-right: 12px;
+}
+.sideBarOverview-shareAds-title__title span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #464D61;
+}
+.sideBarOverview-shareAds__icons {
+display: flex;
+}
+.sideBarOverview-shareAds-icons__icon{
+  cursor: pointer;
+  margin-right: 10px;
+}

@@ -1,0 +1,162 @@
+.accountSettings{
+  width: 984px;
+  margin-top: 40px;
+}
+.accountSettings__title{
+  margin-bottom: 24px;
+
+}
+.accountSettings__title h4{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 32px;
+  color: #191F33;
+}
+.accountSettings-accountInfo{
+  margin-bottom: 24px;
+}
+.accountSettings-accountInfo__avatar{
+
+}
+.accountSettings-accountInfo-avatar__avatar{
+
+}
+.accountSettings-accountInfo-avatar__avatar img{
+  border-radius: 50%;
+  margin-right: 24px;
+}
+.accountSettings-accountInfo__email{
+  display: flex;
+  align-items: center;
+}
+.accountSettings-accountInfo-email__title{
+  margin-right: 8px;
+}
+.accountSettings-accountInfo-email__title span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #191F33;
+}
+.accountSettings-accountInfo-email__mail{
+
+}
+.accountSettings-accountInfo-email__mail span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #464D61;
+}
+.accountSettings__form{
+  margin-bottom: 32px;
+  border-bottom: 1px solid #EBEEF7;
+}
+.accountSettings-form{
+  margin-bottom: 32px;
+}
+.accountSettings-form span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #191F33;
+}
+.accountSettings-form input{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  background: #FFFFFF;
+border: 1px solid #EDEFF5;
+  border-radius: 5px;
+  padding: 12px 18px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.accountSettings-form__button{
+  margin-top: 6px;
+}
+.accountSettings__changePassword{
+  border-bottom: 1px solid #EBEEF7;
+  margin-bottom: 32px;
+}
+.accountSettings-changePassword{
+
+}
+.accountSettings-changePassword__title{
+  margin-bottom: 24px;
+}
+.accountSettings-changePassword__title h4{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 32px;
+  color: #191F33;
+}
+.accountSettings-changePassword__inputBlock{
+}
+.accountSettings-changePassword-inputBlock__password{
+position: relative;
+  margin-bottom: 24px;
+}
+.accountSettings-changePassword-inputBlock-password__title span{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #191F33;
+}
+.accountSettings-changePassword-inputBlock__password input{
+  width: 100%;
+  border: 1px solid #EDEFF5;
+  border-radius: 5px;
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  padding: 12px 40px 12px 18px;
+}
+.accountSettings-changePassword-inputBlock__password img{
+  position: absolute;
+  right: 25px;
+  top: 38px;
+}
+.accountSettings-changePassword-inputBlock__button{
+  margin-bottom: 32px;
+}
+.accountSettings__deleteAccount{
+
+}
+.accountSettings-deleteAccount__title{
+  margin-bottom: 24px;
+}
+.accountSettings-deleteAccount__title h4{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 32px;
+  color: #191F33;
+}
+.accountSettings-deleteAccount__content{
+  margin-bottom: 24px;
+}
+.accountSettings-deleteAccount__content p{
+  font-family: 'Nunito', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #767E94;
+}
