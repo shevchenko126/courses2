@@ -6,6 +6,7 @@ from django.core.mail import send_mail
 from students.models import Subject
 from rest_framework.authtoken.models import Token
 from students.serializers import SubjectSerializer
+from students.tasks.send_student_mail import send_student_mail
 
 
 class GetSubjects(viewsets.ModelViewSet):
@@ -16,6 +17,7 @@ class GetSubjects(viewsets.ModelViewSet):
 
         # send_mail('Subject', 'Subjects', 'no-reply@online-front.pp.ua', ['dima.shevchenkooo@gmail.com'], fail_silently=True)
 
+        send_student_mail.apply_async( ('dima.shevchenkooo@gmail.com', ) )
         subjects = Subject.objects.all()
 
         group_id = self.request.GET.get('group_id', '')
