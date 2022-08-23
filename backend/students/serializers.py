@@ -7,7 +7,7 @@ class SubjectSerializer(TranslatableModelSerializer):
 
     translations = TranslatedFieldsField(shared_model=Subject)
 
-    title = TranslatedField('title')
+    title = TranslatedField()
 
     class Meta:
         model = Subject
