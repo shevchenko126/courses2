@@ -14,7 +14,7 @@ class GetSubjects(viewsets.ModelViewSet):
 
     def get_queryset(self):
 
-        send_mail('Subject', 'Subjects', 'no-reply@online-front.pp.ua', ['dima.shevchenkooo@gmail.com'], fail_silently=True)
+        # send_mail('Subject', 'Subjects', 'no-reply@online-front.pp.ua', ['dima.shevchenkooo@gmail.com'], fail_silently=True)
 
         subjects = Subject.objects.all()
 
