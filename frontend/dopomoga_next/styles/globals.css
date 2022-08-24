@@ -1,0 +1,26 @@
+@import "../node_modules/bootstrap";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", "Nunito", sans-serif;
+}
+p {
+  font-family: "Nunito", serif;
+}
+
+h2 {
+  font-family: "Nunito Sans", serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+@import "Home";
+@import "UI/RecursiveMenu.css";

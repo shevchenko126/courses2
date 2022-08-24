@@ -1,0 +1,25 @@
+.main_counter_area {
+  width: 100%;
+  min-height: 284px;
+  background-image: url("/images/icons/funfact.svg ");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+.main_counter_area .main_counter_content .single_counter {
+  color: #fff;
+}
+
+.main_counter_area .main_counter_content .single_counter i {
+  font-size: 36px;
+  float: left;
+}
+
+.single_counter i {
+  padding: 20px;
+}
+
+.statistic-counter {
+  padding-top: 10px;
+}

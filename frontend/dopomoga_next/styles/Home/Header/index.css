@@ -1,0 +1,142 @@
+@import "MobileHeader";
+.root-header {
+  background-color: #ffff;
+  border-bottom: 1px solid #ebeef7;
+}
+.header {
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo__img {
+  margin-right: 8px;
+}
+.header-logo__title {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.74rem;
+  line-height: 24px;
+  margin: 0;
+}
+
+.header__search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.header-search__img {
+  position: absolute;
+  top: 37px;
+  left: 21px;
+}
+.header-search__input {
+  width: 536px;
+  height: 52px;
+  margin: 24px 0;
+  border: 1px solid #ebeef7;
+  border-radius: 5px;
+  padding: 0 52px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-buttons__postAds {
+}
+.header-buttons-signIn__button {
+  background-color: #e8f7ff;
+  color: #00aaff;
+  margin-right: 12px;
+  width: 92px;
+  height: 50px;
+  border-radius: 4px;
+  font-family: "Nunito Sans", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 50px;
+  border: 0;
+}
+
+.header-buttons__postAds {
+  position: relative;
+  cursor: pointer;
+}
+.header-buttons-postAds__img {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+.header-buttons-postAds__button {
+  background: #00aaff;
+  color: #ffffff;
+  font-family: "Nunito Sans", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 50px;
+  border: 0;
+  width: 139px;
+  height: 50px;
+  border-radius: 4px;
+  padding-left: 40px;
+}
+@media (min-width: 1200px) {
+  .mobileHeader {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .header {
+    position: fixed;
+    background-color: #ffff;
+  }
+  .header-content-block-desktop {
+    display: none;
+  }
+  .header__logo {
+    justify-content: flex-start;
+    margin: 5px 0;
+  }
+  .mobileHeader {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header__buttons {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .header__search {
+    display: block;
+  }
+  .header-search__input {
+    width: 280px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    position: fixed;
+    background-color: #ffff;
+  }
+  .header__search {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+  .header-search__img {
+    position: relative;
+    top: 0;
+    left: 50px;
+  }
+}
