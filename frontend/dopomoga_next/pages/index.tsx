@@ -6,19 +6,15 @@ import FreshRecommendedAds from "../components/Home/FreshRecommendedAds";
 import TopCategory from "../components/Home/TopCategory";
 import FunFact from "../components/Home/FunFact";
 import MobileApp from "../components/Home/MobileApp";
-import FooterSubscription from "../components/Home/FooterSubscription";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Header />
-      <HeaderNavigate desktopClassName="header-content-block-desktop" />
       <BuySell />
       <FreshRecommendedAds />
       <TopCategory />
       <FunFact />
       <MobileApp />
-      <FooterSubscription />
     </>
   );
 };

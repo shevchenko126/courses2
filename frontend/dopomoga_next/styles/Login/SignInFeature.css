@@ -1,0 +1,49 @@
+.lft{
+    padding: 572px 0 286px 0;
+}
+.lft__manage {
+    display: flex;
+    margin-bottom: 100px;
+}
+.lft__chat {
+    display: flex;
+    margin-bottom: 100px;
+}
+.lft__user {
+    display: flex;
+}
+
+.lft__title{
+    margin: 0;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #191F33;
+}
+
+.lft__subtitle {
+    margin: 12px 0 0 0 ;
+    width: 424px;
+    height: 48px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #767E94;
+}
+
+.lft_img{
+    width: 80px;
+    height: 80px;
+    left: 0px;
+    top: 0px; 
+}
+
+.lft__dscr{
+    margin: 0 0 0 62px;
+}

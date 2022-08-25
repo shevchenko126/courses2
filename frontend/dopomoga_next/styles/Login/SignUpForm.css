@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:wght@700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.11.2/css/all.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+.row.align-items-center.main-form{
+  position: relative;
+  flex-direction: column;
+  padding: 50px;
+  gap: 32px;
+  width: 648px;
+  height: 748px;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 100px rgba(0, 29, 73, 0.12);
+  border-radius: 20px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.row.align-items-center.heading{
+  flex-direction: column;
+  gap: 24px;
+  width: 548px;
+  height: 128px;
+}
+
+.col.sign-up{
+  width: 145px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #191F33;
+  letter-spacing: -0.9px;
+}
+
+.row.align-items-start.sign-up-btns {
+  flex-direction: row;
+  padding: 0px;
+  gap: 24px;
+  width: 548px;
+  height: 56px;
+}
+
+.col.sign-up-btn{
+  width: 262px;
+  height: 56px;
+  padding-left: 0;
+}
+
+.btn.google, .btn.facebook{
+  flex-direction: row;
+  padding: 16px 24px;
+  gap: 20px;
+  width: 262px;
+  height: 56px;
+  background: #FFFFFF;
+  border: 1px solid #EBEEF7;
+  border-radius: 6px;
+}
+.btn.google:hover, .btn.facebook:hover{
+  border: 1px solid #d1d4dd;
+  box-shadow: 2px 2px 5px 2px rgba(140, 149, 153, 0.5);
+  transition: all 0.5s;
+
+}
+
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.25);
+}
+
+.fab.fa-facebook-f{
+  color: #1877F2;
+  transform: scale(1.25);
+}
+
+.col.sign-in{
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+padding: 0px 12px;
+width: 177px;
+height: 24px;
+}
+
+.row.line-text{
+  position: relative;
+  align-items: center;
+}
+.row.line{
+  position: absolute;
+  padding: 0;
+  width: 548px;
+  height: 0px;
+  left: 2.2%;
+  top: 45%;
+  border: 1px solid #EBEEF7;
+  z-index: 1;
+}
+.row.line-paragraph{
+  width: 177px;
+  height: 24px;
+  background: #FFFFFF;
+  z-index: 2;
+  letter-spacing: -0.1px;
+}
+
+.row.align-items-start.inputs{
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 548px;
+  height: 286px;
+}
+
+.fullname-username{
+  gap: 16px;
+  width: 548px; 
+  height: 48px;
+}
+
+.form-control.input{
+  width: 100%;
+  height: 48px;
+  border: 1px solid #EDEFF5;
+}
+.form-control.input,
+.form-control.input::placeholder{
+  color: #939AAD;
+  text-indent: 6px;
+}
+.inputPassword{
+  position: relative;
+}
+.btn-eye-div{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top:18%;
+  right: 4%;
+}
+.btn-eye{
+border: none;
+}
+.bi-eye,
+.bi-eye-slash{
+  position: absolute;
+  top:35%;
+  right: 4%;
+  transform: scale(1.5);
+  color:#636A80
+}
+
+.form-check-input.checkbox{  
+  border: 1.5px solid #DADDE6;
+  border-radius: 3px;
+  width:22px;
+  height: 22px;
+}
+
+
+
+.form-check-label{
+  padding: 5px 0 0 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #636A80;
+}
+
+.pe-auto{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #00AAFF;
+
+}
+
+.btn.btn-primary.btn-lg{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 58px;
+  width: 548px;
+  height: 58px;
+  gap: 12px;
+  border: none;
+  background: #009fee;
+  border-radius: 6px;
+}
+
+.btn.btn-primary.btn-lg:hover{
+  border: 1px solid #00a0f0;
+  box-shadow: 2px 2px 5px 2px rgba(14, 96, 131, 0.5);
+  transition: all 0.5s;
+
+}
+
+.bi-arrow-right{
+  width: 24px;
+  height: 24px;
+  color: #FFFFFF;
+  /* margin-left: 5px; */
+}
+
+.col.log-in{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #767E94;
+  
+}
+
+.pe-auto.sign-up{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left:5px;
+  color: #00AAFF;
+}

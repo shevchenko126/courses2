@@ -1,0 +1,15 @@
+.buttonBlue{
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 50px;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color:  #ffff;
+  background: #00AAFF;
+  border-radius: 4px;
+  padding: 0 20px;
+  border: 1px solid #00AAFF;
+}

@@ -1,10 +1,21 @@
-// @ts-ignore
+
 // import { ReactComponent as MobilImg } from "/public/images/icons/DeviceMobileSpeaker.svg";
 import mobilImg from "/public/images/icons/DeviceMobileSpeaker.svg";
-// @ts-ignore
+
 // import { ReactComponent as ArrowRight } from "../../../public/images/icons/CaretRight.svg";
 
-export const topCategory = [
+interface TopCategoryProps {
+    id: number,
+    name: string,
+    items: string,
+    img: string,
+    links:{
+        id:number,
+        title:string
+    }[]
+}
+
+export const topCategory:TopCategoryProps[] = [
   {
     id: 1,
     name: "Electronic",
@@ -12,18 +23,23 @@ export const topCategory = [
     img: mobilImg,
     links: [
       {
+        id:1,
         title: "Laptops, Desktop Computers, Tablets",
       },
       {
+        id:2,
         title: " TVs",
       },
       {
+        id:3,
         title: "Cameras, Camcorders & Accessories",
       },
       {
+        id:4,
         title: "Other Electronics",
       },
       {
+        id:5,
         title: "View All",
       },
     ],
