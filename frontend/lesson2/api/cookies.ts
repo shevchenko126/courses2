@@ -1,5 +1,5 @@
 
-export function getCookie(name) {
+export function getCookie(name:string) {
     var cookieValue = null;
     if (document.cookie && document.cookie !== '') {
         var cookies = document.cookie.split(';');
@@ -16,7 +16,7 @@ export function getCookie(name) {
 }
 
 
-export function setCookie(name, value) {
+export function setCookie(name:string, value:string) {
     document.cookie = name + "=" + value;
     return value;
 }
